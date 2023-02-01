@@ -1,0 +1,11 @@
+greeting:
+  message: "hello"
+
+"%test":
+  quarkus:
+    opentelemetry:
+      tracer:
+        exporter:
+          otlp:
+            endpoint: http://traces.grafana-agent.svc.cluster.local:55680
+        sampler: off
